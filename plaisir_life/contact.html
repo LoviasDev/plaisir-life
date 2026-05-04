@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>お問い合わせ | Plaisir Life</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,300&display=swap">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/contact.css">
+</head>
+<body class="page-sub">
+
+<!-- HEADER -->
+<header id="hd">
+  <div class="hd-inner">
+    <a href="index.html" class="logo"><img src="img/plaisir-life_logo.png" alt="Plaisir Life"></a>
+    <ul class="nav">
+      <li><a href="index.html#about">会社概要</a></li>
+      <li><a href="index.html#biz">事業内容</a></li>
+      <li><a href="index.html#rec">採用情報</a></li>
+      <li><a href="privacy.html">プライバシーポリシー</a></li>
+      <li><a href="contact.html" class="nav-cta"><span>CONTACT</span></a></li>
+    </ul>
+    <button class="hbg" id="hbg" aria-label="メニュー"><i></i><i></i><i></i></button>
+  </div>
+  <nav id="mnav">
+    <a href="index.html#about" onclick="cm()">会社概要</a>
+    <a href="index.html#biz"   onclick="cm()">事業内容</a>
+    <a href="index.html#rec"   onclick="cm()">採用情報</a>
+    <a href="privacy.html"     onclick="cm()">プライバシーポリシー</a>
+    <a href="contact.html"     onclick="cm()">お問い合わせ</a>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section id="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="ph-ring"></div>
+  <div class="ph-ring"></div>
+  <div class="ph-ring"></div>
+  <div class="page-hero-c">
+    <p class="ph-eyebrow">PLAISIR LIFE Inc.</p>
+    <h1 class="ph-h1">CONTACT</h1>
+    <p class="ph-sub">お問い合わせ</p>
+    <div class="breadcrumb">
+      <a href="index.html">HOME</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>CONTACT</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT BODY -->
+<section id="contact-body">
+  <div class="wrap">
+    <div class="contact-layout">
+
+      <!-- 左：インフォ -->
+      <div class="contact-info fi">
+        <div class="sl"><span>Contact</span></div>
+        <h2 class="contact-h2">お気軽に<br>ご連絡ください。<small>Get in touch</small></h2>
+        <p class="contact-lead">サービスに関するご質問、採用に関するお問い合わせ、その他ご要望など、お気軽にお送りください。<br>通常2営業日以内にご返信いたします。</p>
+
+        <div class="info-card fi d1">
+          <div class="info-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2c7fb8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="info-text">
+            <p>EMAIL</p>
+            <p>mail@plaisir-life.info</p>
+          </div>
+        </div>
+
+        <div class="info-card fi d2">
+          <div class="info-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2c7fb8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="info-text">
+            <p>TEL / FAX</p>
+            <p>TEL. 011-206-1273<br>FAX. 011-206-1368</p>
+          </div>
+        </div>
+
+        <div class="info-card fi d3">
+          <div class="info-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2c7fb8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="info-text">
+            <p>RESPONSE TIME</p>
+            <p>通常2営業日以内にご返信<br>土日祝は翌営業日対応</p>
+          </div>
+        </div>
+
+        <div class="hours-badge fi d3">
+          <span class="hours-dot"></span>
+          平日 9:00 — 18:00 受付中
+        </div>
+      </div>
+
+      <!-- 右：フォーム -->
+      <div class="fi d1">
+        <div class="form-card">
+          <div id="form-area">
+            <h3 class="form-h3">お問い合わせフォーム</h3>
+            <p class="form-sub">※は必須項目です。お送りいただいた内容は個人情報保護方針に基づき取り扱います。</p>
+            <form id="cform" onsubmit="hs(event)">
+              <div class="frow">
+                <div>
+                  <label class="flbl">氏名 <span class="req">*</span></label>
+                  <input type="text" placeholder="山田 太郎" required>
+                </div>
+                <div>
+                  <label class="flbl">会社名</label>
+                  <input type="text" placeholder="株式会社○○">
+                </div>
+              </div>
+              <div class="fg">
+                <label class="flbl">メールアドレス <span class="req">*</span></label>
+                <input type="email" placeholder="info@example.com" required>
+              </div>
+              <div class="fg">
+                <label class="flbl">電話番号</label>
+                <input type="tel" placeholder="03-XXXX-XXXX">
+              </div>
+              <div class="fg">
+                <label class="flbl">お問い合わせ種別 <span class="req">*</span></label>
+                <select required>
+                  <option value="">選択してください</option>
+                  <option>サービスについて</option>
+                  <option>KAMUI BASEについて</option>
+                  <option>採用について</option>
+                  <option>その他</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label class="flbl">お問い合わせ内容 <span class="req">*</span></label>
+                <textarea placeholder="お問い合わせ内容をご記入ください" required></textarea>
+              </div>
+              <label class="privacy-check">
+                <input type="checkbox" required>
+                <span><a href="privacy.html">プライバシーポリシー</a>に同意の上、送信します。</span>
+              </label>
+              <button type="submit" class="sbtn" id="sbtn">
+                <span>送信する</span>
+                <svg class="arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+          <div class="form-done" id="form-done">
+            <div class="done-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2c7fb8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>送信が完了しました</h3>
+            <p>お問い合わせありがとうございます。<br>内容を確認のうえ、2営業日以内にご返信いたします。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div>
+        <div class="ft-logo"><img src="img/plaisir-life_logo.png" alt="Plaisir Life"></div>
+        <div class="ft-addr">合同会社プレジールライフ<br>TEL. 011-206-1273　FAX. 011-206-1368<br>mail@plaisir-life.info</div>
+      </div>
+      <ul class="ft-links">
+        <li><a href="index.html#about">会社概要</a></li>
+        <li><a href="index.html#biz">事業内容</a></li>
+        <li><a href="index.html#rec">採用情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+      </ul>
+    </div>
+    <p class="ft-copy">© 2025 Plaisir Life Inc. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
