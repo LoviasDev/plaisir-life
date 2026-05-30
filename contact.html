@@ -99,24 +99,24 @@
               <div class="frow">
                 <div>
                   <label class="flbl">氏名 <span class="req">*</span></label>
-                  <input type="text" placeholder="山田 太郎" required>
+                  <input type="text" name="name" placeholder="山田 太郎" required>
                 </div>
                 <div>
                   <label class="flbl">会社名</label>
-                  <input type="text" placeholder="株式会社○○">
+                  <input type="text" name="company" placeholder="株式会社○○">
                 </div>
               </div>
               <div class="fg">
                 <label class="flbl">メールアドレス <span class="req">*</span></label>
-                <input type="email" placeholder="info@example.com" required>
+                <input type="email" name="email" placeholder="info@example.com" required>
               </div>
               <div class="fg">
                 <label class="flbl">電話番号</label>
-                <input type="tel" placeholder="03-XXXX-XXXX">
+                <input type="tel" name="tel" placeholder="03-XXXX-XXXX">
               </div>
               <div class="fg">
                 <label class="flbl">お問い合わせ種別 <span class="req">*</span></label>
-                <select required>
+                <select name="type" required>
                   <option value="">選択してください</option>
                   <option>サービスについて</option>
                   <option>KAMUI BASEについて</option>
@@ -126,7 +126,7 @@
               </div>
               <div class="fg">
                 <label class="flbl">お問い合わせ内容 <span class="req">*</span></label>
-                <textarea placeholder="お問い合わせ内容をご記入ください" required></textarea>
+                <textarea name="body" placeholder="お問い合わせ内容をご記入ください" required></textarea>
               </div>
               <label class="privacy-check">
                 <input type="checkbox" required>
