@@ -291,6 +291,15 @@
   font-weight:500;letter-spacing:.08em;
   color:var(--green);margin-top:10px;
 }
+.message-h{
+  font-family:'Noto Sans JP',sans-serif;
+  font-size:clamp(17px,2vw,22px);
+  font-weight:700;
+  color:var(--navy);
+  line-height:1.7;
+  letter-spacing:.04em;
+  margin-bottom:24px;
+}
 .message-txt{
   font-family:'Noto Sans JP',sans-serif;
   font-size:14px;
